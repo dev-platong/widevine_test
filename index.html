@@ -1,0 +1,12 @@
+<html>
+  <head></head>
+  <body>
+    <video id="videoPlayer" controls></video>
+    <script src="http://cdn.dashjs.org/v4.4.0/dash.all.debug.js"></script>
+    <script>
+      var url = "./h264.mpd";
+      var player = dashjs.MediaPlayer().create();
+      player.initialize(document.querySelector("#videoPlayer"), url, true);
+    </script>
+  </body>
+</html>
