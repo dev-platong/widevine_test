@@ -4,6 +4,7 @@
     <video id="videoPlayer" controls></video>
     <script src="http://cdn.dashjs.org/v4.4.0/dash.all.debug.js"></script>
     <script>
+// var url = "https://livesim.dashif.org/livesim/chunkdur_1/ato_7/testpic4_8s/Manifest.mpd";
       var url = "./h264.mpd";
       var player = dashjs.MediaPlayer().create();
       player.initialize(document.querySelector("#videoPlayer"), url, true);

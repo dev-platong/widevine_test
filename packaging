@@ -2,12 +2,4 @@ packager in=bippop_sd.mp4,stream=audio,init_segment='widevine_video/audio_init.m
 in=bippop_sd.mp4,stream=video,init_segment='widevine_video/h264_480p_init.mp4',segment_template='widevine_video/h264_480p_$Number%03d$.m4s' \
 in=bippop_hd.mp4,stream=video,init_segment='widevine_video/h264_720p_init.mp4',segment_template='widevine_video/h264_720p_$Number%03d$.m4s' \
 in=bippop_full_hd.mp4,stream=video,init_segment='widevine_video/h264_1080p_init.mp4',segment_template='widevine_video/h264_1080p_$Number%03d$.m4s' \
---segment_duration 10 \
---enable_widevine_encryption \
---key_server_url https://license.uat.widevine.com/cenc/getcontentkey/widevine_test \
---content_id 7465737420636f6e74656e74206964 \
---signer widevine_test \
---clear_lead 20 \
---aes_signing_key 1ae8ccd0e7985cc0b6203a55855a1034afc252980e970ca90e5202689f947ab9 \
---aes_signing_iv d58ce954203b7c9a9a9d467f59839249 \
---protection_systems Widevine --mpd_output h264.mpd
+--mpd_output h264.mpd
